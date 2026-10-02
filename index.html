@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الْوَحْدَةُ الرَّابِعَةُ - Plus One Arabic Unit 4 Summary</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&family=Manjari:wght@400;700&display=swap');
+:root {
+  --primary: #0D47A1;
+  --secondary: #1565C0;
+  --accent: #FF6F00;
+  --soft: #E3F2FD;
+  --card-bg: #ffffff;
+  --border: #90CAF9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(160deg, #E3F2FD 0%, #BBDEFB 30%, #E8F5E9 60%, #FFF8E1 100%);
+  color: #1a1a1a;
+  line-height: 1.8;
+  padding: 20px;
+  min-height: 100vh;
+}
+.created-by {
+  text-align: center;
+  background: linear-gradient(90deg, #004D40, #00695C);
+  color: #fff;
+  padding: 10px 16px;
+  font-family: 'Manjari', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: -20px -20px 0;
+  letter-spacing: 0.5px;
+}
+.pdf-download-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #0D47A1, #1565C0);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.28);
+  margin: 0 -20px 22px;
+  border-radius: 0 0 16px 16px;
+}
+.pdf-btn {
+  background: linear-gradient(135deg, #ffca28, #f5a623);
+  color: #1a1a1a;
+  border: none;
+  padding: 13px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  transition: transform .2s;
+}
+.pdf-btn:hover { transform: scale(1.05); }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255,255,255,.94);
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.12);
+  border: 4px solid #fff;
+}
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 3px dashed #64B5F6;
+}
+.unit-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #0D47A1, #1565C0);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: .95rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.main-title {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  font-size: 2rem;
+  color: #0D47A1;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.sub-title {
+  font-family: 'Manjari', sans-serif;
+  font-size: 1.15rem;
+  color: #1565C0;
+  margin-bottom: 8px;
+}
+.theme-tag {
+  display: inline-block;
+  background: #FFF3E0;
+  color: #E65100;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid #FFB74D;
+  margin-top: 6px;
+}
+.section {
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  border: 3px solid #E3F2FD;
+}
+.section-title {
+  font-family: 'Amiri', serif;
+  font-size: 1.35rem;
+  color: #0D47A1;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #90CAF9;
+  padding-bottom: 8px;
+}
+.lesson-card {
+  background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 16px;
+  border: 2px solid #64B5F6;
+  transition: transform .2s;
+}
+.lesson-card:hover { transform: translateY(-3px); }
+.lesson-num {
+  display: inline-block;
+  background: #0D47A1;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.lesson-title-ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.3rem;
+  color: #0D47A1;
+  font-weight: 700;
+}
+.lesson-title-ml {
+  font-family: 'Manjari', sans-serif;
+  font-size: .95rem;
+  color: #37474F;
+  margin-top: 4px;
+}
+.lesson-type {
+  display: inline-block;
+  background: #1565C0;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: .8rem;
+  margin-top: 6px;
+}
+.summary-text {
+  font-family: 'Manjari', sans-serif;
+  font-size: .95rem;
+  color: #37474F;
+  margin-top: 10px;
+  line-height: 1.75;
+}
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.vocab-item {
+  background: #E3F2FD;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #90CAF9;
+}
+.vocab-ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.15rem;
+  color: #0D47A1;
+  font-weight: 700;
+}
+.vocab-en {
+  font-size: .8rem;
+  color: #546E7A;
+}
+.vocab-ml {
+  font-family: 'Manjari', sans-serif;
+  font-size: .8rem;
+  color: #37474F;
+  font-weight: 600;
+}
+.values-box {
+  background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+  border-radius: 14px;
+  padding: 16px;
+  border: 2px solid #FFB74D;
+  margin-top: 12px;
+}
+.values-box h4 {
+  font-family: 'Manjari', sans-serif;
+  color: #E65100;
+  margin-bottom: 8px;
+}
+.values-list {
+  font-family: 'Manjari', sans-serif;
+  font-size: .95rem;
+  color: #BF360C;
+  line-height: 1.85;
+}
+.activity-preview {
+  background: #E8F5E9;
+  border-radius: 12px;
+  padding: 11px 15px;
+  margin: 8px 0;
+  border-right: 5px solid #43A047;
+  font-family: 'Manjari', sans-serif;
+  font-size: .9rem;
+}
+.model-box {
+  background: #E3F2FD;
+  border: 2px solid #90CAF9;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-top: 10px;
+  font-size: .95rem;
+  line-height: 1.8;
+}
+.model-label {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 700;
+  color: #0D47A1;
+  font-size: .85rem;
+  margin-bottom: 4px;
+}
+.footer-note {
+  text-align: center;
+  margin-top: 30px;
+  padding: 18px;
+  background: linear-gradient(90deg, #0D47A1, #1565C0);
+  color: #fff;
+  border-radius: 16px;
+  font-family: 'Manjari', sans-serif;
+}
+.footer-note p { margin: 4px 0; }
+.highlight {
+  background: #FFF9C4;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.ml { font-family: 'Manjari', sans-serif; }
+.ar { font-family: 'Amiri', 'Noto Naskh Arabic', serif; }
+table.simple {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: .88rem;
+}
+table.simple th {
+  background: #0D47A1;
+  color: #fff;
+  padding: 8px;
+}
+table.simple td {
+  border: 1px solid #90CAF9;
+  padding: 7px;
+  text-align: center;
+}
+table.simple tr:nth-child(even) { background: #E3F2FD; }
+@media print {
+  .pdf-download-bar, .created-by { display: none; }
+  body { background: #fff; padding: 0; }
+  .container { box-shadow: none; border: none; }
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="created-by">Created By KATF STATE IT WING</div>
+<div class="pdf-download-bar">
+  <button class="pdf-btn" onclick="downloadSummaryPDF()">📥 Download PDF · ഡൗൺലോഡ്</button>
+</div>
+
+<div class="container" id="summaryContent">
+  <div class="header">
+    <div class="unit-badge">PLUS ONE · UNIT 4 · الْوَحْدَةُ الرَّابِعَةُ</div>
+    <h1 class="main-title ar">الْوَحْدَةُ الرَّابِعَةُ</h1>
+    <h2 class="sub-title ml">സൗഹൃദം · വിശ്വസ്തത · കുടുംബം · Friendship · Loyalty · Family</h2>
+    <div class="theme-tag ml">🤝 സൗഹൃദത്തിന്റെ മധുരം · വിശ്വസ്തത · മദ്യത്തിന്റെ ദോഷങ്ങൾ 🤝</div>
+  </div>
+
+  <!-- UNIT OVERVIEW -->
+  <div class="section">
+    <h2 class="section-title ar">📋 إِطَارُ الْوَحْدَةِ · യൂണിറ്റ് അവലോകനം</h2>
+    <div class="ml" style="font-size:1rem;line-height:1.9;">
+      <p><b>Unit:</b> الْوَحْدَةُ الرَّابِعَةُ (Fourth Unit)</p>
+      <p><b>Lessons:</b> 3</p>
+      <p>1. الصَّدَاقَةُ حُلْوَةٌ (بيان) – Friendship is Sweet</p>
+      <p>2. ظِلٌّ ظَلِيلٌ (قصة قصيرة) – A Shady Shade (Mustafa Lutfi al-Manfaluti)</p>
+      <p>3. بَائِسَةٌ (تمثيلية) – The Miserable Woman (Play in 3 scenes)</p>
+      <p><b>Core Message:</b> യഥാർത്ഥ സൗഹൃദം വിശ്വസ്തതയിലും പിന്തുണയിലും അധിഷ്ഠിതമാണ്. മദ്യവും ദുഷിച്ച കൂട്ടുകെട്ടും കുടുംബത്തെ നശിപ്പിക്കുന്നു.</p>
+    </div>
+  </div>
+
+  <!-- LESSON 1: الصداقة حلوة -->
+  <div class="section">
+    <h2 class="section-title ar">📖 الدَّرْسُ الْعَاشِرُ</h2>
+    <div class="lesson-card" style="background:linear-gradient(135deg,#E8F5E9,#C8E6C9);border-color:#81C784;">
+      <span class="lesson-num" style="background:#2E7D32;">1</span>
+      <span class="lesson-title-ar ar" style="color:#2E7D32;">الصَّدَاقَةُ حُلْوَةٌ</span>
+      <div class="lesson-title-ml ml">സൗഹൃദം മധുരമാണ് · Friendship is Sweet</div>
+      <div class="lesson-type" style="background:#2E7D32;">بَيَانٌ · Narrative Story</div>
+      <div class="summary-text ml">
+        രണ്ട് സുഹൃത്തുക്കൾ മരുഭൂമിയിൽ യാത്ര ചെയ്യുമ്പോൾ വഴക്കിട്ടു. ഒരാൾ മറ്റേയാളെ അടിച്ചു. അടിക്കപ്പെട്ടയാൾ മണലിൽ എഴുതി: “ഇന്ന് എന്റെ ഹൃദയസുഹൃത്ത് എന്നെ അടിച്ചു.” പിന്നീട് ഒരാൾ ചതുപ്പിൽ വീണ് മുങ്ങാൻ തുടങ്ങിയപ്പോൾ മറ്റേയാൾ രക്ഷിച്ചു. അയാൾ പാറയിൽ കൊത്തി: “ഇന്ന് എന്റെ ഹൃദയസുഹൃത്ത് എന്റെ ജീവൻ രക്ഷിച്ചു.”
+        <br><br>
+        <b>സന്ദേശം:</b> ആരെങ്കിലും നമ്മോട് ദോഷം ചെയ്താൽ അത് മണലിൽ എഴുതുക (മറക്കാൻ). ആരെങ്കിലും നന്മ ചെയ്താൽ പാറയിൽ കൊത്തുക (ഒരിക്കലും മറക്കാതിരിക്കാൻ).
+      </div>
+
+      <h4 class="ml" style="margin-top:14px;color:#0D47A1;">📚 പ്രധാന വാക്കുകൾ · Vocabulary</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item"><div class="vocab-ar ar">صَدَاقَةٌ</div><div class="vocab-en">Friendship</div><div class="vocab-ml">സൗഹൃദം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">حَمِيمٌ</div><div class="vocab-en">Intimate</div><div class="vocab-ml">ഹൃദയസുഹൃത്ത്</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">صَحْرَاءُ</div><div class="vocab-en">Desert</div><div class="vocab-ml">മരുഭൂമി</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">شِجَارٌ</div><div class="vocab-en">Quarrel</div><div class="vocab-ml">വഴക്ക്</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">صَفَعَ</div><div class="vocab-en">To slap</div><div class="vocab-ml">അടിക്കുക</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">أَنْقَذَ</div><div class="vocab-en">To save</div><div class="vocab-ml">രക്ഷിക്കുക</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">نَقَشَ</div><div class="vocab-en">To engrave</div><div class="vocab-ml">കൊത്തുക</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">صَخْرَةٌ</div><div class="vocab-en">Rock</div><div class="vocab-ml">പാറ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مُسْتَنْقَعٌ</div><div class="vocab-en">Swamp</div><div class="vocab-ml">ചതുപ്പ്</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">وَفَاءٌ</div><div class="vocab-en">Loyalty</div><div class="vocab-ml">വിശ്വസ്തത</div></div>
+      </div>
+
+      <div class="activity-preview ml">📝 <b>പ്രവർത്തനങ്ങൾ · Activities:</b></div>
+
+      <div class="model-box">
+        <div class="model-label">1️⃣ സന്ദേശം · Key Message</div>
+        <div class="ar">
+          حِينَمَا يُسِيءُ إِلَيْنَا أَحَدٌ نَكْتُبُ إِسَاءَتَهُ عَلَى الرِّمَالِ حَتَّى تَمْسَحَهَا رِيَاحُ النِّسْيَانِ.<br>
+          لَكِنْ عِنْدَمَا يُحْسِنُ إِلَيْنَا أَحَدٌ نَنْقُشُ إِحْسَانَهُ عَلَى الصَّخْرَةِ كَيْ لَا نَنْسَاهُ أَبَدًا.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 2: ظل ظليل -->
+  <div class="section">
+    <h2 class="section-title ar">📜 الدَّرْسُ الْحَادِي عَشَرَ</h2>
+    <div class="lesson-card" style="background:linear-gradient(135deg,#FFF3E0,#FFE0B2);border-color:#FFB74D;">
+      <span class="lesson-num" style="background:#E65100;">2</span>
+      <span class="lesson-title-ar ar" style="color:#E65100;">ظِلٌّ ظَلِيلٌ</span>
+      <div class="lesson-title-ml ml">തണൽ നൽകുന്ന നിഴൽ · A Shady Shade</div>
+      <div class="lesson-type" style="background:#E65100;">قِصَّةٌ قَصِيرَةٌ · Short Story by مصطفى لطفي المنفلوطي</div>
+      <div class="summary-text ml">
+        ഒരു സുഹൃത്ത് 7 വർഷത്തിന് ശേഷം തിരിച്ചുവന്നപ്പോൾ പഴയ സുഹൃത്തിന്റെ വീട് ഒരു സമാധാനത്തിന്റെ പറുദീസയിൽ നിന്ന് ഒരു ശ്മശാനം പോലെ മാറിയിരുന്നു. സുഹൃത്ത് ദുഷിച്ച കൂട്ടുകെട്ടിലും മദ്യത്തിലും അകപ്പെട്ട് കുടുംബത്തെ നശിപ്പിച്ചു. ഭാര്യയും മക്കളും ദുരിതത്തിലായി.
+        <br><br>
+        <b>കേന്ദ്ര ആശയം:</b> «مَا أَكْثَرَ أَيَّامَ الْحَيَاةِ وَمَا أَقَلَّهَا!» – ജീവിതത്തിലെ ദിവസങ്ങൾ എത്രയോ അധികം! എന്നാൽ അവയിൽ യഥാർത്ഥമായി ജീവിച്ചത് വളരെ കുറവ്!
+      </div>
+
+      <div class="summary-text ar" style="background:#FFF8E1;padding:10px;border-radius:10px;margin-top:8px;font-size:1.05rem;">
+        سَلَامٌ عَلَى الدُّنْيَا إِذَا لَمْ يَكُنْ بِهَا<br>
+        صَدِيقٌ صَدُوقٌ صَادِقُ الْوَعْدِ مُنْصِفًا
+      </div>
+
+      <h4 class="ml" style="margin-top:14px;color:#0D47A1;">📚 പ്രധാന വാക്കുകൾ · Vocabulary</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item"><div class="vocab-ar ar">فِرْدَوْسٌ</div><div class="vocab-en">Paradise</div><div class="vocab-ml">സ്വർഗം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">شَقَاءٌ</div><div class="vocab-en">Misery</div><div class="vocab-ml">ദുരിതം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">حُزْنٌ</div><div class="vocab-en">Sadness</div><div class="vocab-ml">ദുഃഖം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">ظَنٌّ</div><div class="vocab-en">Suspicion</div><div class="vocab-ml">സംശയം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">قُدْوَةٌ</div><div class="vocab-en">Role Model</div><div class="vocab-ml">മാതൃക</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">فَضِيلَةٌ</div><div class="vocab-en">Virtue</div><div class="vocab-ml">സദ്ഗുണം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">شَيْخُوخَةٌ</div><div class="vocab-en">Old Age</div><div class="vocab-ml">വാർദ്ധക്യം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مَسْقَطُ رَأْسٍ</div><div class="vocab-en">Birthplace</div><div class="vocab-ml">ജന്മസ്ഥലം</div></div>
+      </div>
+
+      <div class="activity-preview ml">📝 <b>പ്രവർത്തനങ്ങൾ · Activities:</b></div>
+
+      <div class="model-box">
+        <div class="model-label">1️⃣ المنفلوطي – ജീവചരിത്രം</div>
+        <div class="ml">
+          • وُلِدَ ١٨٧٦ م فِي مَنْفَلُوط (مصر)<br>
+          • أَدِيبٌ وَشَاعِرٌ مِصْرِيٌّ نَابِغٌ فِي الْإِنْشَاءِ<br>
+          • مُؤَلَّفَاتُهُ: النَّظَرَاتُ، الْعَبَرَاتُ، فِي سَبِيلِ التَّاجِ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 3: بائسة -->
+  <div class="section">
+    <h2 class="section-title ar">🌴 الدَّرْسُ الثَّانِي عَشَرَ</h2>
+    <div class="lesson-card">
+      <span class="lesson-num">3</span>
+      <span class="lesson-title-ar ar">بَائِسَةٌ</span>
+      <div class="lesson-title-ml ml">ദുരിതയായ സ്ത്രീ · The Miserable Woman</div>
+      <div class="lesson-type">تَمْثِيلِيَّةٌ · Play in 3 Scenes</div>
+      <div class="summary-text ml">
+        <b>കഥാപാത്രങ്ങൾ:</b> خَالِدٌ (മദ്യപാനി), فَارِسٌ (സുഹൃത്ത്), مَرْيَمُ (ഭാര്യ), عَجُوزٌ (അയൽക്കാരി)
+        <br><br>
+        <b>മൂന്ന് ദൃശ്യങ്ങൾ:</b>
+        <br>1️⃣ فَارِسٌ തന്റെ പഴയ സുഹൃത്ത് خَالِدٌ-നെ കാണുന്നു – സമ്പന്നനായിരുന്നയാൾ ഇപ്പോൾ ദരിദ്രനും രോഗിയും.
+        <br>2️⃣ مَرْيَمُ ദുരിതത്തിൽ – മക്കൾക്ക് ആഹാരം നൽകാൻ കഴിയാത്ത അവസ്ഥ. خَالِدٌ മദ്യത്തിന് പണം ആവശ്യപ്പെടുന്നു.
+        <br>3️⃣ خَالِدٌ മദ്യത്തിന് വേണ്ടി വീട്ടിലെത്തി, മരിച്ചു കിടക്കുന്ന مَرْيَمُ-യെയും കുഞ്ഞിനെയും കാണുന്നു. അയാൾ നിരാശയിൽ നിലവിളിക്കുന്നു.
+        <br><br>
+        <b>സന്ദേശം:</b> മദ്യം കുടുംബത്തെ നശിപ്പിക്കുന്നു. യഥാർത്ഥ സൗഹൃദം വിപത്തിൽ പിന്തുണ നൽകുന്നു.
+      </div>
+
+      <h4 class="ml" style="margin-top:14px;color:#0D47A1;">📚 പ്രധാന വാക്കുകൾ · Vocabulary</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item"><div class="vocab-ar ar">بَائِسٌ</div><div class="vocab-en">Miserable</div><div class="vocab-ml">ദുരിതനായ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">أَلَمٌ</div><div class="vocab-en">Pain</div><div class="vocab-ml">വേദന</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">مَرِيضٌ</div><div class="vocab-en">Sick</div><div class="vocab-ml">രോഗി</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">نَحِيفٌ</div><div class="vocab-en">Slim / Thin</div><div class="vocab-ml">മെലിഞ്ഞ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">سَعَادَةٌ</div><div class="vocab-en">Happiness</div><div class="vocab-ml">സന്തോഷം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">احْتِرَامٌ مُتَبَادَلٌ</div><div class="vocab-en">Mutual Respect</div><div class="vocab-ml">പരസ്പര ബഹുമാനം</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">دَعْمٌ مُتَبَادَلٌ</div><div class="vocab-en">Mutual Support</div><div class="vocab-ml">പരസ്പര പിന്തുണ</div></div>
+        <div class="vocab-item"><div class="vocab-ar ar">تَعَاوُنٌ</div><div class="vocab-en">Co-operation</div><div class="vocab-ml">സഹകരണം</div></div>
+      </div>
+
+      <div class="activity-preview ml">📝 <b>പ്രവർത്തനങ്ങൾ · Activities:</b></div>
+
+      <div class="model-box">
+        <div class="model-label">1️⃣ صِيَغُ التَّعَجُّبِ · Exclamatory Forms</div>
+        <div class="ar">
+          مَا أَفْعَلَهُ! · أَفْعِلْ بِهِ!<br>
+          مَا أَجْمَلَ الصَّدَاقَةَ! · أَجْمِلْ بِالصِّدْقِ!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY VALUES -->
+  <div class="section">
+    <h2 class="section-title ar">💎 الْقِيَمُ وَالْمَفَاهِيمُ · പ്രധാന മൂല്യങ്ങൾ</h2>
+    <div class="values-box">
+      <h4 class="ml">🌟 ഈ യൂണിറ്റിൽ നിന്ന് പഠിക്കേണ്ടത്:</h4>
+      <div class="values-list">
+        ✅ <b>الصَّدَاقَةُ الْحَمِيمَةُ</b> – യഥാർത്ഥ സൗഹൃദം വിശ്വസ്തതയിലും പിന്തുണയിലും അധിഷ്ഠിതം<br>
+        ✅ <b>الْوَفَاءُ</b> – വിശ്വസ്തത സൗഹൃദത്തിന്റെ അടിത്തറ<br>
+        ✅ <b>تَأْثِيرَاتُ الْخُمُورِ</b> – മദ്യം കുടുംബത്തെ നശിപ്പിക്കുന്നു<br>
+        ✅ <b>أَصْدِقَاءُ السُّوءِ</b> – ദുഷിച്ച കൂട്ടുകെട്ട് ജീവിതം നശിപ്പിക്കും<br>
+        ✅ <b>الاحْتِرَامُ الْمُتَبَادَلُ</b> – പരസ്പര ബഹുമാനവും പിന്തുണയും സന്തോഷകരമായ സൗഹൃദത്തിന് അനിവാര്യം
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK REVISION -->
+  <div class="section">
+    <h2 class="section-title ar">🔄 مُرَاجَعَةٌ سَرِيعَةٌ · ദ്രുത പുനരവലോകനം</h2>
+    <div class="activity-preview ml"><b>1.</b> ആദ്യ പാഠം? → <span class="highlight">الصَّدَاقَةُ حُلْوَةٌ</span> (മണലും പാറയും)</div>
+    <div class="activity-preview ml"><b>2.</b> രണ്ടാം പാഠം? → <span class="highlight">ظِلٌّ ظَلِيلٌ</span> (المنفلوطي)</div>
+    <div class="activity-preview ml"><b>3.</b> മൂന്നാം പാഠം? → <span class="highlight">بَائِسَةٌ</span> (تمثيلية – 3 مشاهد)</div>
+    <div class="activity-preview ml"><b>4.</b> യഥാർത്ഥ സൗഹൃദത്തിന്റെ അടയാളം? → <span class="highlight">വിപത്തിൽ പിന്തുണ നൽകുക</span></div>
+    <div class="activity-preview ml"><b>5.</b> مَا أَكْثَرَ أَيَّامَ الْحَيَاةِ؟ → <span class="highlight">وَمَا أَقَلَّهَا!</span></div>
+    <div class="activity-preview ml"><b>6.</b> മദ്യത്തിന്റെ ഫലം? → <span class="highlight">കുടുംബ തകർച്ച + ദുരിതം</span></div>
+  </div>
+
+  <!-- VOCABULARY TABLE -->
+  <div class="section">
+    <h2 class="section-title ar">📖 مَعَانِي الْمُفْرَدَاتِ · പ്രധാന പദാവലി</h2>
+    <table class="simple">
+      <tr><th>English</th><th>العربية</th><th>English</th><th>العربية</th></tr>
+      <tr><td>Slim</td><td>نَحِيفٌ</td><td>Intimate</td><td>حَمِيمٌ (ج) أَحِمَّاءُ</td></tr>
+      <tr><td>Sick</td><td>مَرِيضٌ</td><td>Desert</td><td>صَحْرَاءُ (ج) صَحَارِي</td></tr>
+      <tr><td>Paradise</td><td>فِرْدَوْسٌ (ج) فَرَادِيسُ</td><td>Quarrel</td><td>شِجَارٌ</td></tr>
+      <tr><td>Happiness</td><td>سَعَادَةٌ</td><td>To slap</td><td>صَفَعَ / يَصْفَعُ</td></tr>
+      <tr><td>Generation</td><td>جِيلٌ (ج) أَجْيَالٌ</td><td>Pain</td><td>أَلَمٌ (ج) آلَامٌ</td></tr>
+      <tr><td>Suspicion</td><td>ظَنٌّ (ج) ظُنُونٌ</td><td>Sadness</td><td>حُزْنٌ (ج) أَحْزَانٌ</td></tr>
+      <tr><td>Wisdom</td><td>حِكْمَةٌ (ج) حِكَمٌ</td><td>To save</td><td>أَنْقَذَ / يُنْقِذُ</td></tr>
+      <tr><td>Role Model</td><td>قُدْوَةٌ</td><td>To engrave</td><td>نَقَشَ / يَنْقُشُ</td></tr>
+      <tr><td>Loyalty</td><td>وَفَاءٌ</td><td>Friendship</td><td>صَدَاقَةٌ</td></tr>
+      <tr><td>Misery</td><td>شَقَاءٌ</td><td>Mutual Respect</td><td>الاحْتِرَامُ الْمُتَبَادَلُ</td></tr>
+    </table>
+  </div>
+
+  <div class="footer-note">
+    <p class="ar" style="font-size:1.2rem;">🤝 الصَّدَاقَةُ حُلْوَةٌ · الْوَفَاءُ · الاحْتِرَامُ الْمُتَبَادَلُ 🤝</p>
+    <p>Friendship is Sweet · Loyalty · Mutual Respect</p>
+    <p style="margin-top:10px;font-size:.9rem;">Kerala Plus One Arabic · Unit 4 Full Summary</p>
+    <p style="font-size:.85rem;opacity:.9;margin-top:4px;">Created By KATF STATE IT WING</p>
+  </div>
+</div>
+
+<script>
+async function downloadSummaryPDF() {
+  const btn = document.querySelector('.pdf-btn');
+  const orig = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = '⏳ Preparing PDF...';
+  try {
+    const el = document.getElementById('summaryContent');
+    const canvas = await html2canvas(el, { scale: 2, backgroundColor: '#ffffff', useCORS: true });
+    const img = canvas.toDataURL('image/jpeg', 0.95);
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF('p', 'pt', 'a4');
+    const pw = pdf.internal.pageSize.getWidth();
+    const ph = pdf.internal.pageSize.getHeight();
+    const iw = pw;
+    const ih = canvas.height * iw / canvas.width;
+    let hLeft = ih, pos = 0;
+    pdf.addImage(img, 'JPEG', 0, pos, iw, ih);
+    hLeft -= ph;
+    while (hLeft > 0) {
+      pos = hLeft - ih;
+      pdf.addPage();
+      pdf.addImage(img, 'JPEG', 0, pos, iw, ih);
+      hLeft -= ph;
+    }
+    pdf.save('PlusOne_Unit4_Summary.pdf');
+  } catch (e) {
+    alert('PDF error: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = orig;
+  }
+}
+</script>
+</body>
+</html>
